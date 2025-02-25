@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PHY.MAT 131 Coding Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .project {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .project h3 {
+            margin-top: 0;
+        }
+        .code-box {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PHY.MAT 131 Coding Showcase</h1>
+        <p>Welcome to my PHY.MAT 131 coding portfolio. Below are the coding projects I’ve worked on so far.</p>
+    </header>
+
+    <div class="content">
+        <h2>Introduction</h2>
+        <p>This page showcases the work I've done as part of the PHY.MAT 131 course. Here, you can explore various coding assignments, examples, and solutions that I've implemented for the course.</p>
+        
+        <h2>My Projects</h2>
+        
+        <!-- Example Project 1 -->
+        <div class="project">
+            <h3>Project 1: Simple Physics Simulation</h3>
+            <p>This project simulates the motion of a projectile under the influence of gravity using basic physics equations.</p>
+            <h4>Code:</h4>
+            <div class="code-box">
+                <pre>
+# Simple projectile motion simulator
+import math
+
+# Initial conditions
+v0 = 20  # initial velocity in m/s
+angle = 45  # launch angle in degrees
+g = 9.81  # gravitational acceleration in m/s^2
+
+# Convert angle to radians
+angle_rad = math.radians(angle)
+
+# Calculate initial velocity components
+v0_x = v0 * math.cos(angle_rad)
+v0_y = v0 * math.sin(angle_rad)
+
+# Calculate flight time and range
+flight_time = (2 * v0_y) / g
+range_ = v0_x * flight_time
+
+# Display results
+print(f"Flight Time: {flight_time:.2f} seconds")
+print(f"
